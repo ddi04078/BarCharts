@@ -42,8 +42,9 @@ class ViewController: UIViewController {
         BarChartView.xAxis.labelPosition = .bottom
         BarChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values : months)
         
-    }
-
-
+        //바 그래프의 배경색 바꾸기
+        BarChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)
+        
+       }
 }
 
