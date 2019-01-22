@@ -37,7 +37,11 @@ class ViewController: UIViewController {
         chartDataSet.colors = ChartColorTemplates.colorful() //형형색색의 바 들을 만들기 위해
         let chartData = BarChartData(dataSet: chartDataSet)
         BarChartView.data = chartData
-       
+        
+        //x레이블의 위치를 bottom으로 바꿈
+        BarChartView.xAxis.labelPosition = .bottom
+        BarChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values : months)
+        
     }
 
 
