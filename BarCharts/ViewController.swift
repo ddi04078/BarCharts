@@ -45,6 +45,9 @@ class ViewController: UIViewController {
         //바 그래프의 배경색 바꾸기
         BarChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)
         
+        //애니메이션 효과
+        BarChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+        
        }
 }
 
